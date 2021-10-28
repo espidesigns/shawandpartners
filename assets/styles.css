@@ -222,6 +222,10 @@ a {
   transition: color 0.25s ease;
 }
 
+small {
+  font-size: 0.75rem;
+}
+
 #wrapper {
   -webkit-overflow-scrolling: touch;
   display: flex;
@@ -1033,7 +1037,7 @@ body.is-instant:after {
   flex-shrink: 0;
   flex-grow: 0;
   max-width: 100%;
-  padding: 0 0 0 4rem;
+  /* padding: 0 0 0 4rem; */
 }
 
 #container07.columns>.wrapper>.inner>*>* {
@@ -1050,7 +1054,7 @@ body.is-instant:after {
 }
 
 #container07.columns>.wrapper>.inner>*:first-child {
-  margin-left: -4rem;
+  /* margin-left: -4rem; */
 }
 
 #container07.default>.wrapper>.inner>.full {
@@ -1136,16 +1140,59 @@ body.is-instant:after {
 }
 
 #container07>.wrapper>.inner> :nth-child(1) {
-  width: calc(50% + 2rem);
+  width: 100%;
   text-align: center;
 }
-
+/** /
 #container07>.wrapper>.inner> :nth-child(2) {
   width: calc(50% + 2rem);
   text-align: center;
 }
+/**/
 
 
+#container08:not(:first-child) {
+  margin-top: 2rem !important;
+}
+
+#container08:not(:last-child) {
+  margin-bottom: 2rem !important;
+}
+
+#container08>.wrapper>.inner {
+  padding: 0rem 0rem;
+}
+
+#container08 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+#container08>.wrapper {
+  width: 100%;
+  max-width: 70rem;
+}
+
+
+.footer-text {
+  text-align: center;
+  color: #474747;
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.875em;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+.footer-text a {
+  text-decoration: underline;
+}
+
+.footer-text a:hover {
+  text-decoration: none;
+}
 
 .image {
   position: relative;
@@ -1228,7 +1275,7 @@ body.is-instant:after {
 }
 
 #image03 .frame {
-  width: 100vw;
+  /* width: 100vw; */
   transition: none;
 }
 
@@ -1412,6 +1459,25 @@ p .li {
   text-decoration: none;
 }
 
+#text03 {
+  text-align: center;
+  color: #474747;
+  font-family: 'Inconsolata', monospace;
+  letter-spacing: 0.125rem;
+  width: calc(100% + 0.125rem);
+  font-size: 1.5em;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+#text03 a {
+  text-decoration: underline;
+}
+
+#text03 a:hover {
+  text-decoration: none;
+}
+
 .buttons {
   cursor: default;
   padding: 0;
@@ -1591,6 +1657,7 @@ p .li {
     font-size: 11pt;
   }
 }
+
 
 @media (max-width: 736px) {
   html {
@@ -2223,6 +2290,8 @@ p .li {
     text-align: inherit !important;
   }
 
+
+
   #image02 .frame {
     width: 100vw;
     height: 5.15625rem !important;
@@ -2246,15 +2315,15 @@ p .li {
     object-fit: cover;
     object-position: center;
   }
-
+/** /
   #image03 .frame {
     height: 23.28125rem !important;
   }
-
   #image03 img {
     object-fit: cover;
     object-position: center;
   }
+/**/
 
   #text04 {
     letter-spacing: 0.109375rem;
@@ -2369,11 +2438,11 @@ p .li {
   #image01 .frame {
     height: 18.625rem !important;
   }
-
+/** /
   #image03 .frame {
     height: 18.625rem !important;
   }
-
+/**/
   #buttons02 li a {
     width: 100%;
     max-width: 32rem;
@@ -2647,11 +2716,11 @@ p .li {
   #image01 .frame {
     height: 16.296875rem !important;
   }
-
+/** /
   #image03 .frame {
     height: 16.296875rem !important;
   }
-
+/**/
   #text04 {
     font-size: 1em;
   }
